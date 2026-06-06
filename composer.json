@@ -6,7 +6,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "babaic/laravel-wallet": "^2.0",
+        "bavix/laravel-wallet": "^2.0",
+        "ext-intl": "*",
         "filament/filament": "^3.0",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9"
@@ -58,6 +59,11 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
+        },
+        "policy": {
+            "advisories": {
+                "block": false
+            }
         }
     },
     "minimum-stability": "stable",
